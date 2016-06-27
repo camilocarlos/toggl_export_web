@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-	var URL_SERVICE = "http://localhost:5000/";
+	var URL_SERVICE = "http://togglexportapi.herokuapp.com/";
 var dataSet = [];
 
 var table = $('#data_table').DataTable({
