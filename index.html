@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Toggl Export Resume Day</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="css/jquery.buttons.dataTables.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<!-- jQuery (necessario para os plugins Javascript Bootstrap) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/toggl.js"></script>
+</head>
+<body>
+<div class="container">
+            <div class="row">
+		<div class="col-lg-8 col-lg-offset-2">
+			<h1>Exporte o resumo de registros do <a href="http://toggl.com"><font color="red">Toggl</font></a></h1>
+			<p class="lead">Informe os dados abaixo</p>
+			<div id="form" class="form-vertical">
+			  <div class="row">
+			    <div class="form-group ">
+			      <div class="col-md-4">
+			        <label for="tokenAPI">Token</label>
+			        <input type="text" class="form-control" id="tokenAPI" placeholder="Token" >
+				<div class="help-block with-errors"></div>
+			      </div>
+			    </div>
+			  </div>
+			<div class="row">
+				<div class="col-md-3">
+				  <div class="form-group">
+				    <label for="dataInicio">Data inicio</label>
+				    <input type="text" class="form-control" id="dataInicio" placeholder="01/01/201603:00">
+				  </div>
+				  </div>
+
+				 <div class="col-md-3">
+				  <div class="form-group">
+				    <label for="dataFim">Data Fim</label>
+				    <input type="text" class="form-control" id="dataFim" placeholder="11/01/201603:00">
+				  </div>
+				  </div>
+
+	   	        </div>
+		<div class="row">
+				<div class="col-md-5">
+			  <button id="save-data"  class="btn btn-success btn-send">Pesquisar</button>
+				  </div>
+				  </div>
+
+			<br />
+        </div><!-- /.8 -->
+      </div> <!-- /.row-->
+      <div class="row">
+	<div id="table_result">
+	<table id="data_table" class="table table-bordered" cellspacing="0" width="80%">
+		<thead>
+			<th>Data</th>
+			<th>Periodo 1</th>
+			<th>Periodo 2</th>
+			<th>Periodo 1</th>
+			<th>Periodo 2</th>
+			<th>Ajuste (+)</th>
+			<th>Ajuste (-)</th>
+			<th>Total</th>
+		</thead>
+	</table>
+	</div>
+              </div> <!-- /.row-->
+        </div> <!-- /.container-->
+</body>
+</html>
